@@ -1,0 +1,91 @@
+/* Estilos generales para la sección "Mis Habilidades" */
+.skills {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .skills-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .skills h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 50px;
+  }
+  
+  .skills-category {
+    margin-bottom: 50px;
+  }
+  
+  .skills-category h3 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .skill-item {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill-item h4 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+  }
+  
+  .skill-level {
+    height: 100%;
+    transition: width 0.5s ease;
+  }
+  
+  .html { width: 90%; background-color: #f44336; }
+  .css { width: 85%; background-color: #2196f3; }
+  .js { width: 80%; background-color: #ffeb3b; }
+  .angular { width: 75%; background-color: #4caf50; }
+  .node { width: 80%; background-color: #4caf50; }
+  .express { width: 75%; background-color: #ff5722; }
+  .mongo { width: 70%; background-color: #009688; }
+  .security { width: 85%; background-color: #f44336; }
+  .owasp { width: 80%; background-color: #ffeb3b; }
+  .web-security { width: 90%; background-color: #2196f3; }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .skill-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
